@@ -62,10 +62,9 @@ ram.runtime = "50M"
     # This will pre-fetch the asset which can then be deployed during the install/upgrade scripts with :
     #    ynh_setup_source --dest_dir="$install_dir"
     # You can also define other assets than "main" and add --source_id="foobar" in the previous command
-    url = "https://github.com/orhtej2/compression_ynh/releases/download/v1.0.0/noassets.html.zst"
-    sha256 = "062a13324d0e61b1604383ad26cbe8f45a2ed9aac581159b37f709460040656e"
-    rename = "index.html"
-    in_subdir = false
+    url = "https://github.com/orhtej2/compression_ynh/releases/download/v1.0.0/assets.tar.zst"
+    sha256 = "a2166d92c71ad7c9092a096ba7d48eaf8efb6f1af130a15971c32a085fe6c2b0"
+    in_subdir = true
 
     [resources.system_user]
 

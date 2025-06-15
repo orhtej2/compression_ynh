@@ -14,9 +14,9 @@ ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir"
-echo "eac2bc6e0cfe6958d61c2925916f0616862b18c23c093508342d373eefa90a3c index.html" > "$install_dir/index.html.sha256"
+echo "eac2bc6e0cfe6958d61c2925916f0616862b18c23c093508342d373eefa90a3c noassets.html" > "$install_dir/noassets.html.sha256"
 pushd "$install_dir"
-sha256sum --check "index.html.sha256" || ynh_die "The downloaded index.html file is corrupted"
+sha256sum --check "noassets.html.sha256" || ynh_die "The downloaded index.html file is corrupted"
 popd
 
 ### $install_dir will automatically be initialized with some decent
